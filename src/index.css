@@ -6,7 +6,7 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
-
+    --accentpurple: 262 85% 80%; /* soft purple */
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
 
@@ -88,14 +88,21 @@
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter antialiased;
+    min-height: 100vh;
+    background-color: #fff;
+  }
+}
+
+@layer utilities {
+  .a4 {
+    max-width: 850px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    box-shadow: 0 2px 12px 0 rgb(80 110 200 / 0.07);
   }
 }
