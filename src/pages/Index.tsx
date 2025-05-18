@@ -2,93 +2,81 @@
 import SectionHeader from "@/components/SectionHeader";
 import TechGrid from "@/components/TechGrid";
 import CVQRCode from "@/components/CVQRCode";
-import { Mail, Linkedin, Globe } from "lucide-react";
+import { Mail, Linkedin, Globe, Instagram } from "lucide-react";
 
 const PROFILE = {
-  name: "Alex Johnson",
-  title: "Full-Stack Engineer",
-  location: "San Francisco, CA · Remote",
-  email: "alex.johnson@email.com",
-  linkedin: "https://linkedin.com/in/alexjohnson",
-  portfolio: "https://alexjohnson.dev",
-  summary: `Results-driven Full-Stack Engineer with 6+ years' experience building scalable web and mobile apps. Specializes in React Native, JavaScript/TypeScript, Node.js, and Firebase. Combines deep technical know-how with design thinking for seamless, user-centric solutions.`,
+  name: "Japheth Oluwatimileyin Jerry",
+  title: "Full-Stack Engineer · UI/UX & Graphic Designer",
+  location: "Federal Capital Territory, Nigeria · Remote",
+  email: "princejaphethjj@gmail.com",
+  linkedin: "https://www.linkedin.com/in/japheth-jerry-34a513274/",
+  portfolio: "https://yafetport.netlify.app",
+  instagram: "https://www.instagram.com/_prince_yafet_/",
+  summary: `Resourceful Full-Stack Engineer and Designer with 3+ years' experience delivering engaging, user-first digital products. Specialized in React/Next.js, Node.js, TypeScript, UI/UX design, and graphic design. Strong track record of building scalable web/mobile apps and crafting seamless interfaces.`,
 };
 
 const PROJECTS = [
   {
     name: "QuickTrack (React Native, Node.js, Firebase)",
-    desc: "Shipped mobile logistics platform—reduced delivery times 18%. Real-time sync, push notifications, admin analytics dashboard.",
+    desc: "Built logistics platform with real-time sync and notifications; improved delivery speed by 18%.",
   },
   {
     name: "FitBuddy (React Native, Firebase, Figma)",
-    desc: "Designed and built a social fitness app featured on Product Hunt. Drove 20K+ downloads with intuitive UI and viral sharing features.",
+    desc: "Designed and launched social fitness app, driving 20K+ downloads with strong UI and viral features.",
   },
   {
     name: "TradeDesk Web (React, Node.js, Redux)",
-    desc: "Architected trading operations dashboard for fintech startup. Cut manual interventions by 35% and improved system observability.",
+    desc: "Architected trading dashboard to reduce manual ops by 35% and advance system reliability.",
   },
 ];
 
 const EXPERIENCE = [
   {
-    title: "Senior Full-Stack Engineer",
-    company: "Loop Apps",
-    time: "2022 – Present",
+    title: "Full-Stack Engineer & Designer",
+    company: "Freelance & Remote Teams",
+    time: "2021 – Present",
     results: [
-      "Led team of 5 to deliver React Native mobile suite, maintaining 99.99% uptime. Oversaw CI/CD with Firebase and GitHub Actions.",
-      "Improved app store ratings by 0.7 (avg. 4.6), redesigning onboarding UI with Figma and user-testing.",
-      "Refactored Node.js APIs; lowered response times by 43% using async workflows and database optimization.",
+      "Delivered multiple scalable web/mobile apps using React, Node.js, Next.js, and Firebase.",
+      "Designed intuitive UI/UX and graphics for startups and small businesses, elevating engagement.",
+      "Implemented modern design systems and responsive layouts with Figma and Tailwind CSS.",
     ],
   },
-  {
-    title: "Full-Stack Developer",
-    company: "Vivid Labs",
-    time: "2019 – 2022",
-    results: [
-      "Developed cross-platform (web/mobile) apps with React, React Native, Firebase auth, and Stripe payments.",
-      "Automated deployment/release cycles—rolling out updates 2x faster.",
-      "Collaborated with designers and PMs to launch 4+ successful B2B SaaS products.",
-    ],
-  },
-  {
-    title: "Software Engineer",
-    company: "Brightspace",
-    time: "2018 – 2019",
-    results: [
-      "Engineered admin portal using Node.js and Material UI; improved platform accessibility and speed.",
-      "Reduced bug backlog by 60% with test-driven refactoring.",
-    ],
-  },
+  // ... You can add other roles/companies as you grow!
 ];
 
 const EDUCATION = [
   {
-    school: "University of California, Berkeley",
-    degree: "B.S. Computer Science",
-    year: "2018",
+    school: "Self-Taught & Online Programs",
+    degree: "Full-Stack Web Development (incl. UI/UX, Graphic Design)",
+    year: "2021+",
   },
   {
-    school: "Google",
-    degree: "Associate Android Developer Certification",
-    year: "2021",
+    school: "Certifications & Workshops",
+    degree: "JavaScript, React, Figma, Adobe Creative Suite",
+    year: "2022+",
   },
 ];
 
 const FOOTER_LINKS = [
   {
+    icon: Globe,
+    text: "yafetport.netlify.app",
+    href: "https://yafetport.netlify.app",
+  },
+  {
+    icon: Instagram,
+    text: "_prince_yafet_",
+    href: "https://www.instagram.com/_prince_yafet_/",
+  },
+  {
     icon: Mail,
-    text: "alex.johnson@email.com",
-    href: "mailto:alex.johnson@email.com",
+    text: "princejaphethjj@gmail.com",
+    href: "mailto:princejaphethjj@gmail.com",
   },
   {
     icon: Linkedin,
-    text: "linkedin.com/in/alexjohnson",
-    href: "https://linkedin.com/in/alexjohnson",
-  },
-  {
-    icon: Globe,
-    text: "alexjohnson.dev",
-    href: "https://alexjohnson.dev",
+    text: "linkedin.com/in/japheth-jerry-34a513274",
+    href: "https://www.linkedin.com/in/japheth-jerry-34a513274/",
   },
 ];
 
@@ -106,12 +94,12 @@ const Index = () => {
         </div>
         <div className="flex flex-col gap-2 items-end">
           <div className="flex gap-3">
-            <a href={PROFILE.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <CVQRCode url={PROFILE.linkedin} />
+            <a href={PROFILE.portfolio} target="_blank" rel="noopener noreferrer" aria-label="Portfolio QR">
+              <CVQRCode url={PROFILE.portfolio} alt="Portfolio QR code" />
             </a>
           </div>
           <div className="text-xs text-gray-400 hidden md:block mt-1">
-            Scan for LinkedIn
+            Scan for Portfolio
           </div>
         </div>
       </header>
@@ -124,8 +112,28 @@ const Index = () => {
       </section>
 
       {/* Tech Stack / Tools */}
-      <SectionHeader>Tech Stack &amp; Tools</SectionHeader>
-      <TechGrid />
+      <SectionHeader>Key Tech Stack &amp; Tools</SectionHeader>
+      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-2 gap-y-1 font-medium text-gray-700 mt-1 mb-6" aria-label="Key tech stack and tools">
+        {[
+          "HTML5 / CSS3 / SASS",
+          "Tailwind CSS",
+          "JavaScript (ES6+), TypeScript",
+          "React.js / Next.js",
+          "Astro",
+          "React Native",
+          "Node.js",
+          "MongoDB, SQL",
+          "Bootstrap / Reactstrap",
+          "PHP / Laravel",
+          "Java, C#, C++",
+          "Git & Command Line",
+          "VS Code",
+          "Figma / Adobe CC",
+          "Webflow / CorelDRAW",
+        ].map((label) => (
+          <li key={label} className="flex items-center gap-2 text-sm">{label}</li>
+        ))}
+      </ul>
 
       {/* Notable Projects */}
       <SectionHeader>Notable Projects</SectionHeader>
@@ -180,7 +188,7 @@ const Index = () => {
           ))}
         </div>
         <div className="mt-2 md:mt-0">
-          <span>© {new Date().getFullYear()} Alex Johnson · Resume</span>
+          <span>© {new Date().getFullYear()} Japheth Oluwatimileyin Jerry · Resume</span>
         </div>
       </footer>
     </main>
@@ -188,3 +196,4 @@ const Index = () => {
 };
 
 export default Index;
+
