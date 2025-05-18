@@ -10,7 +10,7 @@ const PROFILE = {
   email: "princejaphethjj@gmail.com",
   portfolio: "https://yafetport.netlify.app",
   instagram: "https://www.instagram.com/_prince_yafet_/",
-  summary: `Senior Software Engineer with 3+ years architecting enterprise applications in JavaScript/TypeScript and PHP ecosystems. Led development of applications serving 10,000+ users, achieving 98% code coverage and 95+ Lighthouse scores while reducing system latency by 40%. Established CI/CD pipelines and comprehensive testing strategies across 15+ production deployments, combining scalable architecture with user-centered design.`,
+  summary: `Senior Software Engineer with 3+ years architecting enterprise applications in JavaScript/TypeScript and PHP (Laravel) ecosystems. Led development of applications serving 10,000+ users, achieving 98% code coverage and 95+ Lighthouse scores while reducing system latency by 40%. Established CI/CD pipelines and comprehensive testing strategies across 15+ production deployments, combining scalable architecture with user-centered design.`,
 };
 
 // Key Projects with focus on technical leadership and business impact
