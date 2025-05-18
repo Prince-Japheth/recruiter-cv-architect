@@ -1,4 +1,3 @@
-
 import SectionHeader from "@/components/SectionHeader";
 import TechGrid from "@/components/TechGrid";
 import CVQRCode from "@/components/CVQRCode";
@@ -12,71 +11,127 @@ const PROFILE = {
   linkedin: "https://www.linkedin.com/in/japheth-jerry-34a513274/",
   portfolio: "https://yafetport.netlify.app",
   instagram: "https://www.instagram.com/_prince_yafet_/",
-  summary: `Resourceful Full-Stack Engineer and Designer with 3+ years' experience delivering engaging, user-first digital products. Specialized in React/Next.js, Node.js, TypeScript, UI/UX design, and graphic design. Strong track record of building scalable web/mobile apps and crafting seamless interfaces.`,
+  summary: `Full-Stack Engineer, UI/UX & Graphic Designer with 3+ years' experience delivering impactful, user-first digital products across web and mobile. Highly skilled in React, React Native, Node.js, TypeScript, Firebase, and Figma. Adept at designing interfaces, building APIs, and leading end-to-end application development for startups and innovative teams.`,
 };
 
-const PROJECTS = [
-  {
-    name: "QuickTrack (React Native, Node.js, Firebase)",
-    desc: "Built logistics platform with real-time sync and notifications; improved delivery speed by 18%.",
-  },
-  {
-    name: "FitBuddy (React Native, Firebase, Figma)",
-    desc: "Designed and launched social fitness app, driving 20K+ downloads with strong UI and viral features.",
-  },
-  {
-    name: "TradeDesk Web (React, Node.js, Redux)",
-    desc: "Architected trading dashboard to reduce manual ops by 35% and advance system reliability.",
-  },
+// Hand-picked, cleaned up technologies (best mix for your role)
+const TECH_STACK = [
+  "HTML5 / CSS3 / SASS",
+  "Tailwind CSS",
+  "JavaScript (ES6+), TypeScript",
+  "React.js / Next.js / Astro",
+  "Node.js / Express.js",
+  "React Native",
+  "MongoDB, MySQL, SQL",
+  "Bootstrap / Reactstrap",
+  "Redux / Zustand",
+  "PHP / Laravel",
+  "Figma / Adobe CC",
+  "Webflow / CorelDRAW",
+  "VS Code / Command Line / Git",
 ];
 
+// Experiences: Professional format, quantifiable impacts, ATS-friendly
 const EXPERIENCE = [
   {
-    title: "Full-Stack Engineer & Designer",
-    company: "Freelance & Remote Teams",
-    time: "2021 – Present",
+    title: "Full-Stack Engineer (Part-Time)",
+    company: "Aquila Cyber",
+    time: "2024 – Present",
+    employment: "Part-Time",
     results: [
-      "Delivered multiple scalable web/mobile apps using React, Node.js, Next.js, and Firebase.",
-      "Designed intuitive UI/UX and graphics for startups and small businesses, elevating engagement.",
-      "Implemented modern design systems and responsive layouts with Figma and Tailwind CSS.",
-    ],
+      "Developed scalable full-stack apps (MERN/XAMP); built and secured APIs with Node.js, Express, and PHP.",
+      "Delivered responsive React.js interfaces; managed MongoDB & MySQL databases.",
+      "Implemented CI/CD pipelines and security standards across projects."
+    ]
   },
-  // ... You can add other roles/companies as you grow!
+  {
+    title: "Software Engineer",
+    company: "Spicodex",
+    time: "2024 – Present",
+    employment: "Full-Time",
+    results: [
+      "Built cross-platform mobile apps with React Native and TypeScript.",
+      "Created web dashboards and integrated third-party APIs/services.",
+      "Led testing adoption and reviewed code to boost team reliability."
+    ]
+  },
+  {
+    title: "Web Developer, UI/UX & Graphic Designer",
+    company: "Web Launch Guys",
+    time: "2020 – Present",
+    employment: "Part-Time",
+    results: [
+      "Shipped responsive web apps using React.js, Next.js, and Astro.",
+      "Designed UI/UX, brand identities, and marketing assets for diverse clients.",
+      "Optimized websites for SEO, performance, and accessibility.",
+    ]
+  },
+  {
+    title: "UI/UX & Web Developer",
+    company: "Safekan",
+    time: "2022 – 2024",
+    employment: "Part-Time",
+    results: [
+      "Built pixel-perfect websites using HTML, CSS, Bootstrap, JavaScript.",
+      "Produced user research, wireframes, and interactive Figma prototypes.",
+      "Established brand guidelines and ran usability tests.",
+    ]
+  },
+  {
+    title: "Freelance & Remote Teams",
+    company: "",
+    time: "2021 – Present",
+    employment: "Project-Based",
+    results: [
+      "Delivered SaaS platforms and mobile apps for industries (logistics, fitness, e-commerce).",
+      "Mentored junior devs and collaborated on Git-driven projects.",
+      "Partnered with startups to deliver MVPs from spec to launch.",
+    ]
+  },
 ];
 
 const EDUCATION = [
   {
-    school: "Self-Taught & Online Programs",
-    degree: "Full-Stack Web Development (incl. UI/UX, Graphic Design)",
-    year: "2021+",
+    school: "Lincoln University College, Malaysia",
+    degree: "B.Sc. Computer Science (Hons) Networking & Cyber Security",
+    year: "2025 – 2027 (Expected)"
   },
   {
-    school: "Certifications & Workshops",
-    degree: "JavaScript, React, Figma, Adobe Creative Suite",
-    year: "2022+",
+    school: "Lincoln University College, Nigeria",
+    degree: "Diploma, Computer Software Engineering",
+    year: "2023 – Present"
   },
 ];
 
+const CERTIFICATIONS = [
+  {
+    cert: "Print Xpert – Professional Graphic Designer",
+    year: "March 2021",
+  }
+];
+
+// Swapping order of portfolio/LinkedIn per your ATS & hiring logic.
+// Instagram is present, LinkedIn still visible.
 const FOOTER_LINKS = [
   {
     icon: Globe,
     text: "yafetport.netlify.app",
-    href: "https://yafetport.netlify.app",
+    href: "https://yafetport.netlify.app"
   },
   {
     icon: Instagram,
     text: "_prince_yafet_",
-    href: "https://www.instagram.com/_prince_yafet_/",
+    href: "https://www.instagram.com/_prince_yafet_/"
   },
   {
     icon: Mail,
     text: "princejaphethjj@gmail.com",
-    href: "mailto:princejaphethjj@gmail.com",
+    href: "mailto:princejaphethjj@gmail.com"
   },
   {
     icon: Linkedin,
     text: "linkedin.com/in/japheth-jerry-34a513274",
-    href: "https://www.linkedin.com/in/japheth-jerry-34a513274/",
+    href: "https://www.linkedin.com/in/japheth-jerry-34a513274/"
   },
 ];
 
@@ -114,47 +169,25 @@ const Index = () => {
       {/* Tech Stack / Tools */}
       <SectionHeader>Key Tech Stack &amp; Tools</SectionHeader>
       <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-2 gap-y-1 font-medium text-gray-700 mt-1 mb-6" aria-label="Key tech stack and tools">
-        {[
-          "HTML5 / CSS3 / SASS",
-          "Tailwind CSS",
-          "JavaScript (ES6+), TypeScript",
-          "React.js / Next.js",
-          "Astro",
-          "React Native",
-          "Node.js",
-          "MongoDB, SQL",
-          "Bootstrap / Reactstrap",
-          "PHP / Laravel",
-          "Java, C#, C++",
-          "Git & Command Line",
-          "VS Code",
-          "Figma / Adobe CC",
-          "Webflow / CorelDRAW",
-        ].map((label) => (
+        {TECH_STACK.map((label) => (
           <li key={label} className="flex items-center gap-2 text-sm">{label}</li>
-        ))}
-      </ul>
-
-      {/* Notable Projects */}
-      <SectionHeader>Notable Projects</SectionHeader>
-      <ul className="mb-6 space-y-2">
-        {PROJECTS.map((p) => (
-          <li key={p.name} className="print:text-xs">
-            <div className="font-semibold">{p.name}</div>
-            <div className="text-gray-600">{p.desc}</div>
-          </li>
         ))}
       </ul>
 
       {/* Professional Experience */}
       <SectionHeader>Professional Experience</SectionHeader>
       <section className="mb-6 space-y-5">
-        {EXPERIENCE.map((role) => (
-          <div key={role.title + role.company} className="print:break-inside-avoid">
+        {EXPERIENCE.map((role, idx) => (
+          <div key={role.title + role.company + idx} className="print:break-inside-avoid">
             <div className="flex flex-wrap items-center gap-2">
               <span className="font-semibold text-lg">{role.title}</span>
-              <span className="text-accentpurple font-semibold">@ {role.company}</span>
+              {role.company && (
+                <span className="text-accentpurple font-semibold">@ {role.company}</span>
+              )}
               <span className="ml-2 text-gray-400 text-sm">{role.time}</span>
+              {role.employment ? (
+                <span className="ml-2 text-xs text-gray-400 font-normal uppercase">{role.employment}</span>
+              ) : null}
             </div>
             <ul className="list-disc list-inside ml-1 text-gray-700 mt-2 [&>li]:mb-1">
               {role.results.map((r, i) => (
@@ -166,13 +199,23 @@ const Index = () => {
       </section>
 
       {/* Education & Certifications */}
-      <SectionHeader>Education &amp; Certifications</SectionHeader>
-      <section className="mb-6 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2">
+      <SectionHeader>Education</SectionHeader>
+      <section className="mb-4 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2">
         {EDUCATION.map((ed) => (
           <div key={ed.school + ed.year}>
             <div className="font-semibold">{ed.school}</div>
             <div className="text-gray-700">{ed.degree}</div>
             <div className="text-gray-400 text-xs">{ed.year}</div>
+          </div>
+        ))}
+      </section>
+
+      <SectionHeader>Certifications</SectionHeader>
+      <section className="mb-6 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2">
+        {CERTIFICATIONS.map((c) => (
+          <div key={c.cert + c.year}>
+            <div className="font-semibold">{c.cert}</div>
+            <div className="text-gray-400 text-xs">{c.year}</div>
           </div>
         ))}
       </section>
@@ -196,4 +239,3 @@ const Index = () => {
 };
 
 export default Index;
-

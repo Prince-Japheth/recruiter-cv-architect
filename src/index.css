@@ -104,5 +104,6 @@
     margin-right: auto;
     background: #fff;
     /* REMOVED shadow for a crisp, classic CV look */
+    /* box-shadow: none !important; */  /* Ensures NO shadow always */
   }
 }
