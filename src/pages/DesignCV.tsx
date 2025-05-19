@@ -8,8 +8,7 @@ const PROFILE = {
   location: "Federal Capital Territory, Nigeria · Remote",
   email: "princejaphethjj@gmail.com",
   portfolio: "https://yafetport.netlify.app",
-  linkedin: "https://www.linkedin.com/in/japheth-jerry-34a513274/",
-  behance: "https://www.behance.net/princeyafet",
+  instagram: "https://www.instagram.com/_prince_yafet_/",
   summary: `UI/UX & Graphic Designer with 4+ years crafting high-impact digital experiences and brand identities. Expert in Figma and Adobe Creative Suite, delivering user-centered solutions that drive engagement and conversion. Proven track record of elevating brand presence for 20+ clients through strategic design thinking and pixel-perfect execution across web, mobile, and print media.`,
 };
 
@@ -120,16 +119,6 @@ const FOOTER_LINKS = [
     href: "mailto:princejaphethjj@gmail.com"
   },
   {
-    icon: Linkedin,
-    text: "linkedin.com/in/japheth-jerry-34a513274",
-    href: "https://www.linkedin.com/in/japheth-jerry-34a513274/"
-  },
-  {
-    icon: Globe,
-    text: "yafetport.netlify.app",
-    href: "https://yafetport.netlify.app"
-  },
-  {
     icon: Instagram,
     text: "_prince_yafet_",
     href: "https://www.instagram.com/_prince_yafet_/"
@@ -211,16 +200,10 @@ const DesignCV = () => {
                 Portfolio
               </a>
               <span className="text-gray-400">•</span>
-              <a href={PROFILE.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-accentpurple inline-flex items-center gap-0.5 underline decoration-1 underline-offset-2">
-                <Linkedin className="w-3 h-3" aria-hidden="true" />
+              <a href={PROFILE.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-accentpurple inline-flex items-center gap-0.5 underline decoration-1 underline-offset-2">
+                <Instagram className="w-3 h-3" aria-hidden="true" />
                 <LinkIcon className="w-2.5 h-2.5 text-gray-400" aria-hidden="true" />
-                LinkedIn
-              </a>
-              <span className="text-gray-400">•</span>
-              <a href={PROFILE.behance} target="_blank" rel="noopener noreferrer" className="hover:text-accentpurple inline-flex items-center gap-0.5 underline decoration-1 underline-offset-2">
-                <Globe className="w-3 h-3" aria-hidden="true" />
-                <LinkIcon className="w-2.5 h-2.5 text-gray-400" aria-hidden="true" />
-                Behance
+                Instagram
               </a>
             </div>
           </div>

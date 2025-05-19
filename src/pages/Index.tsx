@@ -237,18 +237,18 @@ const Index = () => {
                 {PROFILE.email}
               </a>
               <span className="text-gray-400">•</span>
-              <a href={PROFILE.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-accentpurple inline-flex items-center gap-0.5 underline decoration-1 underline-offset-2">
-                <Linkedin className="w-3 h-3" aria-hidden="true" />
-                <LinkIcon className="w-2.5 h-2.5 text-gray-400" aria-hidden="true" />
-                LinkedIn
-              </a>
-              <span className="text-gray-400">•</span>
               <a href={PROFILE.portfolio} target="_blank" rel="noopener noreferrer" className="hover:text-accentpurple inline-flex items-center gap-0.5 underline decoration-1 underline-offset-2">
                 <Globe className="w-3 h-3" aria-hidden="true" />
                 <LinkIcon className="w-2.5 h-2.5 text-gray-400" aria-hidden="true" />
                 Portfolio
-            </a>
-          </div>
+              </a>
+              <span className="text-gray-400">•</span>
+              <a href={PROFILE.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-accentpurple inline-flex items-center gap-0.5 underline decoration-1 underline-offset-2">
+                <Instagram className="w-3 h-3" aria-hidden="true" />
+                <LinkIcon className="w-2.5 h-2.5 text-gray-400" aria-hidden="true" />
+                Instagram
+              </a>
+            </div>
           </div>
           <a 
             href={PROFILE.portfolio} 
