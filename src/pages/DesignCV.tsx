@@ -7,7 +7,7 @@ const PROFILE = {
   title: "UI/UX & Graphic Designer",
   location: "Federal Capital Territory, Nigeria · Remote",
   email: "princejaphethjj@gmail.com",
-  portfolio: "https://yafetport.netlify.app",
+  portfolio: "https://yafetport.netlify.app/projects?category=UI%2FUX+DESIGN",
   instagram: "https://www.instagram.com/_prince_yafet_/",
   summary: `UI/UX & Graphic Designer with 4+ years crafting high-impact digital experiences and brand identities. Expert in Figma and Adobe Creative Suite, delivering user-centered solutions that drive engagement and conversion. Proven track record of elevating brand presence for 20+ clients through strategic design thinking and pixel-perfect execution across web, mobile, and print media.`,
 };
@@ -122,6 +122,11 @@ const FOOTER_LINKS = [
     icon: Instagram,
     text: "_prince_yafet_",
     href: "https://www.instagram.com/_prince_yafet_/"
+  },
+  {
+    icon: Globe,
+    text: "https://yafetport.netlify.app/projects?category=UI%2FUX+DESIGN",
+    href: "https://yafetport.netlify.app/projects?category=UI%2FUX+DESIGN"
   }
 ];
 

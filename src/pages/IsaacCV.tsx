@@ -1,46 +1,41 @@
 import SectionHeader from "@/components/SectionHeader";
 import TechGrid from "@/components/TechGrid";
 import CVQRCode from "@/components/CVQRCode";
-import { Mail, Linkedin, Globe, Instagram, ExternalLink, Link as LinkIcon } from "lucide-react";
+import { Mail, Linkedin, Globe, Phone, ExternalLink, Link as LinkIcon } from "lucide-react";
 
 const PROFILE = {
-  name: "Japheth Oluwatimileyin Jerry",
-  title: "Software Engineer",
-  location: "Federal Capital Territory, Nigeria · Remote",
-  email: "princejaphethjj@gmail.com",
-  portfolio: "https://yafetport.netlify.app",
-  linkedin: "https://www.linkedin.com/in/japheth-jerry-34a513274/",
-  instagram: "https://www.instagram.com/_prince_yafet_/",
-  summary: `Software Engineer with 3+ years architecting enterprise applications in JavaScript/TypeScript and PHP (Laravel) ecosystems. Led development of applications serving 10,000+ users, achieving 98% code coverage and 95+ Lighthouse scores while reducing system latency by 40%, and established CI/CD pipelines with comprehensive testing across 15+ production deployments.`,
+  name: "Isaac Agabi",
+  title: "Software Developer",
+  location: "Mabushi, Abuja, Nigeria · Remote",
+  email: "isaacwayneagabi@gmail.com",
+  phone: "+234 9076599223",
+  portfolio: "https://isaacwayneportfolio.netlify.app",
+  summary: `Skilled software developer specializing in JavaScript, with expertise in web and mobile development, e-commerce solutions, and WordPress. Focused on building high-quality responsive applications using modern frameworks like React, React Native, and Node.js. Background in e-commerce and CMS platforms enables delivery of seamless, user-oriented experiences ensuring optimal performance and scalability across projects.`,
 };
 
 // Key Projects with focus on technical leadership and business impact
 const KEY_PROJECTS = [
   {
-    title: "Bondyt Merchant & User Apps",
-    role: "Lead Mobile Developer (Merchant App)",
-    tech: "React Native, TypeScript, Redux/Zustand, Axios, Jest",
-    outcome: "Architected merchant app with TypeScript and Redux; implemented efficient state management reducing user wait time by 60%. Optimized API integration and caching strategies improving app performance by 40%.",
+    title: "E-commerce Platform Development",
+    role: "Lead Frontend Developer",
+    tech: "React, Node.js, Express, MongoDB, WordPress",
+    outcome: "Architected and developed responsive e-commerce solutions; implemented modern UI/UX practices improving user engagement by 45%. Integrated payment gateways and optimized checkout processes reducing cart abandonment by 30%.",
     links: [
       {
-        text: "Google Play",
-        url: "https://play.google.com/store/apps/details?id=com.bondyt.merchant"
-      },
-      {
-        text: "App Store",
-        url: "https://apps.apple.com/ng/app/bondyt-merchant-list-earn/id6741894381"
+        text: "View Project",
+        url: "https://isaacwayneportfolio.netlify.app"
       }
     ]
   },
   {
-    title: "LCDP School Management System",
-    role: "Lead Full-Stack Developer",
-    tech: "PHP/Laravel, MySQL, Redis, Bootstrap, SASS, Jest",
-    outcome: "Architected scalable school management system serving 5,000+ users; implemented Redis caching and query optimization reducing server load by 70%. Developed automated grading system with comprehensive testing, cutting admin workload by 85% while maintaining 98% code coverage.",
+    title: "Mobile Application Development",
+    role: "Mobile Developer",
+    tech: "React Native, Expo, Node.js, Express",
+    outcome: "Developed cross-platform mobile applications with React Native and Expo; implemented efficient state management and API integration. Achieved 90% code reuse across platforms while maintaining native performance.",
     links: [
       {
         text: "View Project",
-        url: "https://gudu.lcpd.net/"
+        url: "https://isaacwayneportfolio.netlify.app"
       }
     ]
   }
@@ -48,38 +43,36 @@ const KEY_PROJECTS = [
 
 // Strategic tech stack organization for ATS optimization
 const TECH_STACK = {
-  "Core Engineering": [
-    "TypeScript/JavaScript",
-    "MERN Stack (MongoDB, Express, React, Node.js)",
-    "System Design & Architecture",
-    "PHP/Laravel",
-    "Java",
-    "C++/C#"
+  "Core Development": [
+    "JavaScript/TypeScript",
+    "React/React Native",
+    "Node.js/Express",
+    "PHP/WordPress",
+    "HTML5/CSS3",
+    "Sass/SCSS"
   ],
   "Frontend & Mobile": [
     "React/Next.js",
-    "React Native",
-    "Angular",
-    "Vue.js",
-    "Redux/Zustand",
-    "HTML5/CSS3",
-    "Bootstrap/Tailwind CSS",
-    "UI/UX Implementation"
+    "React Native/Expo",
+    "WordPress CMS",
+    "Responsive Design",
+    "UI/UX Implementation",
+    "Mobile Testing"
   ],
-  "Backend & Data": [
-    "REST/GraphQL APIs",
-    "Microservices Architecture",
+  "Backend & CMS": [
+    "Node.js/Express",
+    "WordPress Development",
+    "REST APIs",
     "MySQL/PostgreSQL",
-    "MongoDB/Redis",
-    "WebSockets",
-    "XAMPP/LAMP Stack"
+    "E-commerce Solutions",
+    "CMS Integration"
   ],
-  "DevOps & Quality": [
-    "AWS/Cloud Services",
-    "Docker/Kubernetes",
-    "CI/CD Pipelines",
+  "Tools & Platforms": [
     "Git/GitHub",
-    "Jest/Cypress",
+    "Chrome DevTools",
+    "Mobile Testing",
+    "SEO Optimization",
+    "Web Analytics",
     "Figma/Adobe XD"
   ]
 };
@@ -87,81 +80,89 @@ const TECH_STACK = {
 // Experience reordered by impact and recency
 const EXPERIENCE = [
   {
-    title: "Web Developer & UI/UX Designer",
-    company: "Web Launch Guys",
-    time: "2020 – Present",
-    employment: "Part-Time",
-    results: [
-      "Led full-stack development of 15+ enterprise applications using React/Next.js and Laravel; implemented performance optimizations reducing load times by 40% and improving Lighthouse scores to 90+",
-      "Architected scalable component libraries and design systems; reduced development time by 30% while maintaining 98% code coverage through comprehensive testing",
-    ]
-  },
-  {
-    title: "Frontend Engineer",
-    company: "Spicodex",
-    time: "2024 – Present",
+    title: "Frontend/Mobile Application Developer",
+    company: "SPICODEX",
+    time: "October 2024 – April 2025",
     employment: "Full-Time",
     results: [
-      "Led React Native mobile app development with TypeScript; implemented Redux/Zustand state management reducing user wait time by 60%",
-      "Established comprehensive testing strategy with Jest and Cypress; achieved 98% code coverage and reduced production bugs by 75%",
-      "Optimized API integration and caching strategies; improved app performance by 40%, maintaining 95+ Lighthouse scores"
+      "Maintained source code repositories by committing changes regularly according to best practices",
+      "Resolved technical issues related to mobile application development and deployment processes",
+      "Monitored application usage metrics and analytics to measure success rate of each release"
     ]
   },
   {
-    title: "Full-Stack Engineer",
-    company: "Aquila Cyber",
-    time: "2024 – Present",
-    employment: "Part-Time",
+    title: "Web Developer",
+    company: "Weblaunchguys",
+    time: "January 2023 – August 2024",
+    employment: "Full-Time",
     results: [
-      "Architected enterprise applications using MERN stack; implemented microservices architecture reducing deployment time by 85%",
-      "Engineered high-performance interfaces with React and TypeScript; optimized database queries reducing load times by 60%",
-      "Implemented of security best practices and automated testing; established CI/CD pipelines achieving 98% code coverage"
+      "Managed website development, content, and SEO optimization for multiple client projects",
+      "Developed web applications using HTML, CSS, JavaScript and jQuery; implemented responsive designs",
+      "Collaborated with UX/UI designers to translate visual concepts into functional web applications",
+      "Integrated third-party APIs and implemented front-end development best practices"
+    ]
+  },
+  {
+    title: "Web Developer / Mobile Developer",
+    company: "LaunchFundr",
+    time: "January 2023 – January 2024",
+    employment: "Full-Time",
+    results: [
+      "Led website and mobile application development for crowdfunding platform",
+      "Managed development team and implemented quality assurance processes",
+      "Developed and maintained responsive web applications using modern frameworks"
     ]
   }
 ];
 
 const EDUCATION = [
   {
-    school: "Lincoln University College, Nigeria",
-    degree: "Diploma in Computer Software Engineering",
-    year: "2022 – Present",
-    focus: "Software Architecture & Cloud Computing"
+    school: "Lincoln University College, Abuja",
+    degree: "Bachelor of Science – Computer Science / Software Development",
+    year: "2020 – 2024",
+    focus: "Software Development & Web Technologies"
   }
 ];
 
-const CERTIFICATIONS = [
+const LANGUAGES = [
   {
-    cert: "Professional Scrum Master I (PSM I)",
-    year: "2023",
-    status: "Completed"
+    language: "English",
+    level: "First Language"
   },
   {
-    cert: "Print Xpert – Professional Graphic Designer",
-    year: "2021",
-    status: "Completed"
+    language: "Hausa",
+    level: "Intermediate (B1)"
+  }
+];
+
+const REFERENCES = [
+  {
+    name: "Charity Magani",
+    role: "CEO, Weblaunchguys",
+    contact: "+234 9168844592"
+  },
+  {
+    name: "Chukwumaife Okoye",
+    role: "CFO, LaunchFundr",
+    contact: "+234 8122251171"
   }
 ];
 
 const FOOTER_LINKS = [
   {
     icon: Mail,
-    text: "princejaphethjj@gmail.com",
-    href: "mailto:princejaphethjj@gmail.com"
+    text: "isaacwayneagabi@gmail.com",
+    href: "mailto:isaacwayneagabi@gmail.com"
   },
   {
-    icon: Linkedin,
-    text: "linkedin.com/in/japheth-jerry-34a513274",
-    href: "https://www.linkedin.com/in/japheth-jerry-34a513274/"
+    icon: Phone,
+    text: "+234 9076599223",
+    href: "tel:+2349076599223"
   },
   {
     icon: Globe,
-    text: "yafetport.netlify.app",
-    href: "https://yafetport.netlify.app"
-  },
-  {
-    icon: Instagram,
-    text: "_prince_yafet_",
-    href: "https://www.instagram.com/_prince_yafet_/"
+    text: "isaacwayneportfolio.netlify.app",
+    href: "https://isaacwayneportfolio.netlify.app"
   }
 ];
 
@@ -194,7 +195,7 @@ const PRINT_STYLES = `
   }
 `;
 
-const Index = () => {
+const IsaacCV = () => {
   return (
     <>
       <style>{PRINT_STYLES}</style>
@@ -243,16 +244,16 @@ const Index = () => {
                 {PROFILE.email}
               </a>
               <span className="text-gray-400">•</span>
+              <a href={`tel:${PROFILE.phone}`} className="hover:text-accentpurple inline-flex items-center gap-0.5 underline decoration-1 underline-offset-2">
+                <Phone className="w-3 h-3" aria-hidden="true" />
+                <LinkIcon className="w-2.5 h-2.5 text-gray-400" aria-hidden="true" />
+                {PROFILE.phone}
+              </a>
+              <span className="text-gray-400">•</span>
               <a href={PROFILE.portfolio} target="_blank" rel="noopener noreferrer" className="hover:text-accentpurple inline-flex items-center gap-0.5 underline decoration-1 underline-offset-2">
                 <Globe className="w-3 h-3" aria-hidden="true" />
                 <LinkIcon className="w-2.5 h-2.5 text-gray-400" aria-hidden="true" />
                 Portfolio
-              </a>
-              <span className="text-gray-400">•</span>
-              <a href={PROFILE.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-accentpurple inline-flex items-center gap-0.5 underline decoration-1 underline-offset-2">
-                <Instagram className="w-3 h-3" aria-hidden="true" />
-                <LinkIcon className="w-2.5 h-2.5 text-gray-400" aria-hidden="true" />
-                Instagram
               </a>
             </div>
           </div>
@@ -264,7 +265,7 @@ const Index = () => {
             aria-label="Portfolio QR Code"
           >
             <img
-              src="/frame.svg"
+              src="/iframe.svg"
               alt=""
               className="absolute inset-0 w-full h-full group-hover:opacity-80 transition-opacity"
               aria-hidden="true"
@@ -394,9 +395,9 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Education & Certifications - Enhanced impact */}
+        {/* Education & Languages - Enhanced impact */}
         <section
-          aria-label="Education & Certifications"
+          aria-label="Education & Languages"
           role="region"
           className="mb-1"
         >
@@ -413,25 +414,36 @@ const Index = () => {
               ))}
             </div>
             <div>
-              <SectionHeader>Certifications</SectionHeader>
-              {CERTIFICATIONS.map((c) => (
-                <article key={c.cert + c.year}>
-                  <h3 className="font-semibold text-[9pt]">{c.cert}</h3>
-                  <div className="flex items-center gap-1">
-                    <time className="text-gray-400 text-[8pt]">{c.year}</time>
-                    {c.status && (
-                      <span className="text-[7pt] px-1 py-0.25 bg-gray-100 text-gray-600 rounded">
-                        {c.status}
-                      </span>
-                    )}
-                  </div>
+              <SectionHeader>Languages</SectionHeader>
+              {LANGUAGES.map((lang) => (
+                <article key={lang.language}>
+                  <h3 className="font-semibold text-[9pt]">{lang.language}</h3>
+                  <div className="text-gray-600 text-[8pt]">{lang.level}</div>
                 </article>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Footer - Minimal with references note */}
+        {/* References - Minimal with contact info */}
+        <section
+          aria-label="Professional References"
+          role="region"
+          className="mb-1"
+        >
+          <SectionHeader>Professional References</SectionHeader>
+          <div className="grid grid-cols-2 gap-x-3">
+            {REFERENCES.map((ref) => (
+              <article key={ref.name}>
+                <h3 className="font-semibold text-[9pt]">{ref.name}</h3>
+                <div className="text-gray-700 text-[8pt]">{ref.role}</div>
+                <div className="text-gray-600 text-[8pt]">{ref.contact}</div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        {/* Footer - Minimal with contact info */}
         <footer
           className="
             border-t border-gray-200 
@@ -463,9 +475,6 @@ const Index = () => {
                 </a>
               ))}
             </div>
-            <div className="text-gray-500 italic">
-              Professional references available upon request
-            </div>
           </nav>
         </footer>
       </main>
@@ -473,4 +482,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default IsaacCV; 
