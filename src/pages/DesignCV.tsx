@@ -7,9 +7,9 @@ const PROFILE = {
   title: "UI/UX & Graphic Designer",
   location: "Federal Capital Territory, Nigeria · Remote",
   email: "princejaphethjj@gmail.com",
-  portfolio: "https://yafetport.netlify.app/projects?category=UI%2FUX+DESIGN",
+  portfolio: "https://japhethjerry.space/projects?category=UI%2FUX+DESIGN",
   instagram: "https://www.instagram.com/_prince_yafet_/",
-  summary: `UI/UX & Graphic Designer with 4+ years crafting high-impact digital experiences and brand identities. Expert in Figma and Adobe Creative Suite, delivering user-centered solutions that drive engagement and conversion. Proven track record of elevating brand presence for 20+ clients through strategic design thinking and pixel-perfect execution across web, mobile, and print media.`,
+  summary: `UI/UX & Graphic Designer with years crafting high-impact digital experiences and brand identities. Expert in Figma and Adobe Creative Suite, delivering user-centered solutions that drive engagement and conversion. Proven track record of elevating brand presence for 20+ clients through strategic design thinking and pixel-perfect execution across web, mobile, and print media.`,
 };
 
 const KEY_PROJECTS = [
@@ -18,21 +18,28 @@ const KEY_PROJECTS = [
     role: "UI/UX Designer",
     tech: "Figma, Adobe XD, User Research, Prototyping",
     outcome: "Designed intuitive educational analytics dashboard; implemented user research findings to improve data visualization clarity by 60%. Created comprehensive design system reducing development time by 40% while maintaining 95% user satisfaction.",
-    link: "https://www.figma.com/design/MG9mnjpONtzH7MAdzaQyFx/Computer-aided-instruction-studies?node-id=0-1"
+    link: "https://japhethjerry.space/projects/computer-aided-instruction-studies-dashboard"
   },
   {
-    title: "Villaco Real Estate Flyer",
-    role: "Graphic Designer",
-    tech: "Adobe Photoshop, Print Design, Layout Design",
-    outcome: "A professional real estate flyer showcasing property listings; created visually appealing layout highlighting key property features and contact information.",
-    link: "https://yafetport.netlify.app/projects?category=Graphic+Design"
+    title: "Education Alliance Consulting Website Redesign",
+    role: "UI/UX Designer",
+    tech: "Figma, User Research, Prototyping, Design Systems",
+    outcome: "Led complete website redesign for Education Alliance Consulting; built comprehensive design system with reusable components and micro-interactions. Conducted user research and restructured information architecture, reducing user journey complexity by 60%. Achieved 95% user satisfaction in prototype testing with significant improvements in engagement and task completion.",
+    link: "https://japhethjerry.space/projects/education-alliance-consulting"
   },
+  // {
+  //   title: "Villaco Real Estate Flyer",
+  //   role: "Graphic Designer",
+  //   tech: "Adobe Photoshop, Print Design, Layout Design",
+  //   outcome: "A professional real estate flyer showcasing property listings; created visually appealing layout highlighting key property features and contact information.",
+  //   link: "https://yafetport.netlify.app/projects?category=Graphic+Design"
+  // },
   {
     title: "Serene E-commerce Platform",
     role: "UI/UX Designer",
     tech: "Figma, User Research, Prototyping, Design Systems",
     outcome: "Architected modern e-commerce interface with focus on conversion optimization; implemented user-centered design principles. Created responsive design system supporting 10+ product categories.",
-    link: "https://www.figma.com/design/nngiN0ih1qbsYJrYoYQZCf/Serene?node-id=0-1"
+    link: "https://japhethjerry.space/projects/serene"
   }
 ];
 
@@ -94,17 +101,18 @@ const EDUCATION = [
   {
     school: "Lincoln University College, Nigeria",
     degree: "Diploma in Computer Software Engineering",
-    year: "2022 – Present",
-    focus: "UI/UX Design & Digital Media"
+    year: "2022 – 2025",
+    focus: "Computer Software Engineering, UI/UX Design & Digital Media",
+    status: "Completed"
   }
 ];
 
 const CERTIFICATIONS = [
-  {
-    cert: "Google UX Design Professional Certificate",
-    year: "2024 (Expected)",
-    status: "In Progress"
-  },
+  // {
+  //   cert: "Google UX Design Professional Certificate",
+  //   year: "2024 (Expected)",
+  //   status: "In Progress"
+  // },
   {
     cert: "Print Xpert – Professional Graphic Designer",
     year: "2021",
@@ -125,8 +133,8 @@ const FOOTER_LINKS = [
   },
   {
     icon: Globe,
-    text: "https://yafetport.netlify.app/projects?category=UI%2FUX+DESIGN",
-    href: "https://yafetport.netlify.app/projects?category=UI%2FUX+DESIGN"
+    text: "https://japhethjerry.space/projects?category=UI%2FUX+DESIGN",
+    href: "https://japhethjerry.space/projects?category=UI%2FUX+DESIGN"
   }
 ];
 
