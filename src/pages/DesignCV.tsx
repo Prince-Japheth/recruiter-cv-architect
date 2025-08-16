@@ -1,5 +1,4 @@
 import SectionHeader from "@/components/SectionHeader";
-import CVQRCode from "@/components/CVQRCode";
 import { Mail, Linkedin, Globe, Instagram, ExternalLink, Link as LinkIcon } from "lucide-react";
 
 const PROFILE = {
@@ -228,12 +227,12 @@ const DesignCV = () => {
             aria-label="Portfolio QR Code"
           >
             <img
-              src="/frame.svg"
-              alt=""
-              className="absolute inset-0 w-full h-full group-hover:opacity-80 transition-opacity"
-              aria-hidden="true"
+              src="/qr_with_logo.png"
+              alt="QR Code with Logo"
+              className="w-full h-full group-hover:opacity-80 transition-opacity"
+              draggable={false}
+              loading="lazy"
             />
-            <CVQRCode url={PROFILE.portfolio} />
             <ExternalLink className="absolute -bottom-1 -right-1 w-3 h-3 text-accentpurple opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true" />
           </a>
         </header>
