@@ -11,7 +11,7 @@ const PROFILE = {
   portfolio: "https://yafetport.netlify.app",
   linkedin: "https://www.linkedin.com/in/japheth-jerry-34a513274/",
   instagram: "https://www.instagram.com/_prince_yafet_/",
-  summary: `Software Engineer with 3+ years architecting enterprise applications in JavaScript/TypeScript and PHP (Laravel) ecosystems. Led development of applications serving 10,000+ users, achieving 98% code coverage and 95+ Lighthouse scores while reducing system latency by 40%, and established CI/CD pipelines with comprehensive testing across 15+ production deployments.`,
+  summary: `Software Engineer with 3+ years architecting enterprise applications in JavaScript/TypeScript and PHP (Laravel) ecosystems. Led development of applications serving 100+ users, achieving 98% code coverage and 95+ Lighthouse scores while reducing system latency by 40%, and established CI/CD pipelines with comprehensive testing across 15+ production deployments.`,
 };
 
 // Key Projects with focus on technical leadership and business impact
@@ -23,6 +23,15 @@ const KEY_PROJECTS = [
     outcome: "Architected merchant app with TypeScript and Redux; implemented efficient state management reducing user wait time by 60%. Optimized API integration and caching strategies improving app performance by 40%.",
     links: [
       {
+        text: "Official Website",
+        url: "https://japhethjerry.space/projects/bondyt-official-website"
+      },
+      {
+        text: "Merchant App",
+        url: "https://japhethjerry.space/projects/bondyt-merchant"
+      }
+      /*
+      {
         text: "Google Play",
         url: "https://play.google.com/store/apps/details?id=com.bondyt.merchant"
       },
@@ -30,6 +39,7 @@ const KEY_PROJECTS = [
         text: "App Store",
         url: "https://apps.apple.com/ng/app/bondyt-merchant-list-earn/id6741894381"
       }
+      */
     ]
   },
   {
@@ -43,14 +53,14 @@ const KEY_PROJECTS = [
         url: "https://gudu.lcpd.net/"
       }
     ]
-  }
+  },
 ];
 
 // Strategic tech stack organization for ATS optimization
 const TECH_STACK = {
   "Core Engineering": [
     "TypeScript/JavaScript",
-    "MERN Stack (MongoDB, Express, React, Node.js)",
+    // "MERN Stack (MongoDB, Express, React, Node.js)",
     "System Design & Architecture",
     "PHP/Laravel",
     "Java",
@@ -67,10 +77,10 @@ const TECH_STACK = {
     "UI/UX Implementation"
   ],
   "Backend & Data": [
-    "REST/GraphQL APIs",
+    // "REST/GraphQL APIs",
     "Microservices Architecture",
     "MySQL/PostgreSQL",
-    "MongoDB/Redis",
+    // "MongoDB/Redis",
     "WebSockets",
     "XAMPP/LAMP Stack"
   ],
@@ -99,7 +109,7 @@ const EXPERIENCE = [
   {
     title: "Frontend Engineer",
     company: "Spicodex",
-    time: "2024 – Present",
+    time: "2024 – 2025",
     employment: "Full-Time",
     results: [
       "Led React Native mobile app development with TypeScript; implemented Redux/Zustand state management reducing user wait time by 60%",
@@ -124,7 +134,7 @@ const EDUCATION = [
   {
     school: "Lincoln University College, Nigeria",
     degree: "Diploma in Computer Software Engineering",
-    year: "2022 – Present",
+    year: "2022 – 2025",
     focus: "Software Architecture & Cloud Computing"
   }
 ];
@@ -264,7 +274,7 @@ const Index = () => {
             aria-label="Portfolio QR Code"
           >
             <img
-              src="/frame.svg"
+              src="/qr_with_logo.png"
               alt=""
               className="absolute inset-0 w-full h-full group-hover:opacity-80 transition-opacity"
               aria-hidden="true"
