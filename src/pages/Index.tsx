@@ -8,41 +8,20 @@ const PROFILE = {
   title: "Software Engineer",
   location: "Federal Capital Territory, Nigeria · Remote",
   email: "princejaphethjj@gmail.com",
-  portfolio: "https://japhethjerry.space",
+  portfolio: "https://yafetport.netlify.app",
   linkedin: "https://www.linkedin.com/in/japheth-jerry-34a513274/",
   instagram: "https://www.instagram.com/_prince_yafet_/",
-  summary: `Software Engineer with 3+ years architecting enterprise applications in JavaScript/TypeScript and PHP (Laravel) ecosystems. Led development of applications serving 100+ users, achieving 98% code coverage and 95+ Lighthouse scores while reducing system latency by 40%, and established CI/CD pipelines with comprehensive testing across 15+ production deployments.`,
+  summary: `Software Engineer with 3+ years architecting enterprise applications in JavaScript/TypeScript and PHP (Laravel) ecosystems. Led development of applications serving 10,000+ users, achieving 98% code coverage and 95+ Lighthouse scores while reducing system latency by 40%, and established CI/CD pipelines with comprehensive testing across 15+ production deployments.`,
 };
 
 // Key Projects with focus on technical leadership and business impact
 const KEY_PROJECTS = [
-  {
-    title: "Periderm CLI",
-    role: "Lead Architect & Developer",
-    tech: "TypeScript, Node.js, Vite, React, TanStack, Supabase",
-    outcome: "Architected an enterprise CLI and web platform featuring a deterministic AST parser and AI deep-review agent. Engineered 150+ automated checks across React/Node ecosystems, catching critical vulnerabilities and runaway cloud costs before production deployment.",
-    links: [
-      {
-        text: "Official Website",
-        url: "https://www.japhethjerry.space/projects/periderm-cli"
-      }
-    ]
-  },
   {
     title: "Bondyt Merchant & User Apps",
     role: "Lead Mobile Developer (Merchant App)",
     tech: "React Native, TypeScript, Redux/Zustand, Axios, Jest",
     outcome: "Architected merchant app with TypeScript and Redux; implemented efficient state management reducing user wait time by 60%. Optimized API integration and caching strategies improving app performance by 40%.",
     links: [
-      {
-        text: "Official Website",
-        url: "https://japhethjerry.space/projects/bondyt-official-website"
-      },
-      {
-        text: "Merchant App",
-        url: "https://japhethjerry.space/projects/bondyt-merchant"
-      }
-      /*
       {
         text: "Google Play",
         url: "https://play.google.com/store/apps/details?id=com.bondyt.merchant"
@@ -51,7 +30,6 @@ const KEY_PROJECTS = [
         text: "App Store",
         url: "https://apps.apple.com/ng/app/bondyt-merchant-list-earn/id6741894381"
       }
-      */
     ]
   },
   {
@@ -65,14 +43,14 @@ const KEY_PROJECTS = [
         url: "https://gudu.lcpd.net/"
       }
     ]
-  },
+  }
 ];
 
 // Strategic tech stack organization for ATS optimization
 const TECH_STACK = {
   "Core Engineering": [
     "TypeScript/JavaScript",
-    // "MERN Stack (MongoDB, Express, React, Node.js)",
+    "MERN Stack (MongoDB, Express, React, Node.js)",
     "System Design & Architecture",
     "PHP/Laravel",
     "Java",
@@ -89,10 +67,10 @@ const TECH_STACK = {
     "UI/UX Implementation"
   ],
   "Backend & Data": [
-    // "REST/GraphQL APIs",
+    "REST/GraphQL APIs",
     "Microservices Architecture",
     "MySQL/PostgreSQL",
-    // "MongoDB/Redis",
+    "MongoDB/Redis",
     "WebSockets",
     "XAMPP/LAMP Stack"
   ],
@@ -109,18 +87,6 @@ const TECH_STACK = {
 // Experience reordered by impact and recency
 const EXPERIENCE = [
   {
-    title: "Software Engineer",
-    company: "Popkup",
-    time: "2025 – Present",
-    employment: "Full-Time",
-    results: [
-      "Architected and developed a full-scale e-commerce SaaS platform using Next.js and TypeScript, handling multi-tenant storefront operations and influencer integrations",
-      "Engineered dynamic brand storefront routing and comprehensive admin dashboards featuring Trust & Reputation systems, verification workflows, and dispute resolution",
-      "Integrated complex third-party payment and shipping APIs to calculate real-time delivery summaries and process seamless checkout flows",
-      "Spearheaded intuitive web and mobile interfaces with a strong focus on mobile-optimized feature design, translating complex commerce concepts into high-quality user experiences"
-    ]
-  },
-  {
     title: "Web Developer & UI/UX Designer",
     company: "Web Launch Guys",
     time: "2020 – Present",
@@ -133,7 +99,7 @@ const EXPERIENCE = [
   {
     title: "Frontend Engineer",
     company: "Spicodex",
-    time: "2024 – 2025",
+    time: "2024 – Present",
     employment: "Full-Time",
     results: [
       "Led React Native mobile app development with TypeScript; implemented Redux/Zustand state management reducing user wait time by 60%",
@@ -158,7 +124,7 @@ const EDUCATION = [
   {
     school: "Lincoln University College, Nigeria",
     degree: "Diploma in Computer Software Engineering",
-    year: "2022 – 2025",
+    year: "2022 – Present",
     focus: "Software Architecture & Cloud Computing"
   }
 ];
@@ -189,8 +155,8 @@ const FOOTER_LINKS = [
   },
   {
     icon: Globe,
-    text: "japhethjerry.space",
-    href: "https://japhethjerry.space"
+    text: "yafetport.netlify.app",
+    href: "https://yafetport.netlify.app"
   },
   {
     icon: Instagram,
@@ -236,7 +202,7 @@ const Index = () => {
         className="
           a4 mx-auto w-[210mm] h-[297mm]
           px-[12mm] py-[10mm]
-          text-[9pt] leading-[1.25]
+          text-[10pt] leading-[1.25]
           font-inter bg-white
           print:shadow-none print:bg-white
           print:mx-0 print:my-0 print:p-0
@@ -260,17 +226,17 @@ const Index = () => {
           role="banner"
         >
           <div>
-            <h1 className="text-lg font-bold text-gray-800 tracking-tight">
+            <h1 className="text-xl font-bold text-gray-800 tracking-tight">
               {PROFILE.name}
             </h1>
             <div className="flex items-center gap-2">
-              <div className="text-sm text-accentpurple font-semibold">
+              <div className="text-base text-accentpurple font-semibold">
                 {PROFILE.title}
               </div>
               <span className="text-gray-400">•</span>
-              <span className="text-[8pt] text-gray-600">{PROFILE.location}</span>
+              <span className="text-[9pt] text-gray-600">{PROFILE.location}</span>
             </div>
-            <div className="flex flex-wrap gap-1.5 text-[8pt] text-gray-600 mt-0.5">
+            <div className="flex flex-wrap gap-1.5 text-[9pt] text-gray-600 mt-0.5">
               <a href={`mailto:${PROFILE.email}`} className="hover:text-accentpurple inline-flex items-center gap-0.5 underline decoration-1 underline-offset-2">
                 <Mail className="w-3 h-3" aria-hidden="true" />
                 <LinkIcon className="w-2.5 h-2.5 text-gray-400" aria-hidden="true" />
@@ -298,7 +264,7 @@ const Index = () => {
             aria-label="Portfolio QR Code"
           >
             <img
-              src="/qr_with_logo.png"
+              src="/frame.svg"
               alt=""
               className="absolute inset-0 w-full h-full group-hover:opacity-80 transition-opacity"
               aria-hidden="true"
@@ -314,7 +280,7 @@ const Index = () => {
           role="region"
           className="mb-1.5"
         >
-          <p className="text-[9pt] leading-snug text-gray-700">
+          <p className="text-[10pt] leading-snug text-gray-700">
             {PROFILE.summary}
           </p>
         </section>
@@ -333,13 +299,13 @@ const Index = () => {
                 className="print:break-inside-avoid"
               >
                 <div className="flex flex-wrap items-center gap-1">
-                  <h3 className="font-semibold text-[9pt]">{role.title}</h3>
+                  <h3 className="font-semibold text-[10pt]">{role.title}</h3>
                   {role.company && (
-                    <span className="text-accentpurple font-semibold text-[8pt]">@ {role.company}</span>
+                    <span className="text-accentpurple font-semibold text-[9pt]">@ {role.company}</span>
                   )}
-                  <time className="ml-1 text-gray-400 text-[7pt]">{role.time}</time>
+                  <time className="ml-1 text-gray-400 text-[8pt]">{role.time}</time>
                   {role.employment && (
-                    <span className="ml-1 text-[7pt] text-gray-400 font-normal uppercase">
+                    <span className="ml-1 text-[8pt] text-gray-400 font-normal uppercase">
                       {role.employment}
                     </span>
                   )}
@@ -347,7 +313,7 @@ const Index = () => {
                 <ul
                   className="
                     list-disc list-inside ml-1 
-                    text-gray-700 text-[8pt] mt-0.5
+                    text-gray-700 text-[9pt] mt-0.5
                     [&>li]:mb-0.25
                   "
                   role="list"
@@ -371,9 +337,9 @@ const Index = () => {
           <div className="grid grid-cols-4 gap-x-3 gap-y-0.5">
             {Object.entries(TECH_STACK).map(([category, skills]) => (
               <div key={category}>
-                <h3 className="font-semibold text-gray-800 text-[8pt] mb-0.25">{category}</h3>
+                <h3 className="font-semibold text-gray-800 text-[9pt] mb-0.25">{category}</h3>
                 <ul
-                  className="text-[7pt] text-gray-700"
+                  className="text-[8pt] text-gray-700"
                   role="list"
                 >
                   {skills.map((skill) => (
@@ -399,10 +365,10 @@ const Index = () => {
                 className="print:break-inside-avoid"
               >
                 <div className="flex flex-wrap items-center gap-1">
-                  <h3 className="font-semibold text-[9pt]">
+                  <h3 className="font-semibold text-[10pt]">
                     {project.title}
                   </h3>
-                  <span className="text-accentpurple font-medium text-[8pt]">— {project.role}</span>
+                  <span className="text-accentpurple font-medium text-[9pt]">— {project.role}</span>
                   {project.links && (
                     <div className="flex gap-1 items-center">
                       {project.links.map((link, linkIdx) => (
@@ -411,7 +377,7 @@ const Index = () => {
                           href={link.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="hover:text-accentpurple inline-flex items-center gap-0.5 underline decoration-1 underline-offset-2 text-[7pt] text-gray-600 group"
+                          className="hover:text-accentpurple inline-flex items-center gap-0.5 underline decoration-1 underline-offset-2 text-[8pt] text-gray-600 group"
                         >
                           {link.text}
                           <LinkIcon className="w-2.5 h-2.5 text-gray-400" aria-hidden="true" />
@@ -421,8 +387,8 @@ const Index = () => {
                     </div>
                   )}
                 </div>
-                <div className="text-gray-600 text-[7pt] mt-0.25"><strong>Tech:</strong> {project.tech}</div>
-                <div className="text-gray-700 text-[8pt] mt-0.25">{project.outcome}</div>
+                <div className="text-gray-600 text-[8pt] mt-0.25"><strong>Tech:</strong> {project.tech}</div>
+                <div className="text-gray-700 text-[9pt] mt-0.25">{project.outcome}</div>
               </article>
             ))}
           </div>
@@ -439,10 +405,10 @@ const Index = () => {
               <SectionHeader>Education</SectionHeader>
               {EDUCATION.map((ed) => (
                 <article key={ed.school + ed.year}>
-                  <h3 className="font-semibold text-[8pt]">{ed.school}</h3>
-                  <div className="text-gray-700 text-[7pt]">{ed.degree}</div>
-                  <div className="text-gray-600 text-[7pt] italic">{ed.focus}</div>
-                  <time className="text-gray-400 text-[7pt]">{ed.year}</time>
+                  <h3 className="font-semibold text-[9pt]">{ed.school}</h3>
+                  <div className="text-gray-700 text-[8pt]">{ed.degree}</div>
+                  <div className="text-gray-600 text-[8pt] italic">{ed.focus}</div>
+                  <time className="text-gray-400 text-[8pt]">{ed.year}</time>
                 </article>
               ))}
             </div>
@@ -450,11 +416,11 @@ const Index = () => {
               <SectionHeader>Certifications</SectionHeader>
               {CERTIFICATIONS.map((c) => (
                 <article key={c.cert + c.year}>
-                  <h3 className="font-semibold text-[8pt]">{c.cert}</h3>
+                  <h3 className="font-semibold text-[9pt]">{c.cert}</h3>
                   <div className="flex items-center gap-1">
-                    <time className="text-gray-400 text-[7pt]">{c.year}</time>
+                    <time className="text-gray-400 text-[8pt]">{c.year}</time>
                     {c.status && (
-                      <span className="text-[6pt] px-1 py-0.25 bg-gray-100 text-gray-600 rounded">
+                      <span className="text-[7pt] px-1 py-0.25 bg-gray-100 text-gray-600 rounded">
                         {c.status}
                       </span>
                     )}
@@ -470,7 +436,7 @@ const Index = () => {
           className="
             border-t border-gray-200 
             pt-1 mt-1
-            text-[7pt]
+            text-[8pt]
           "
           role="contentinfo"
         >
