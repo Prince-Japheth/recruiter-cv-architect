@@ -1,46 +1,40 @@
 import SectionHeader from "@/components/SectionHeader";
-import TechGrid from "@/components/TechGrid";
-import CVQRCode from "@/components/CVQRCode";
-import { Mail, Linkedin, Globe, Instagram, ExternalLink, Link as LinkIcon } from "lucide-react";
+import { Mail, Linkedin, Globe, ExternalLink, Link as LinkIcon } from "lucide-react";
 
 const PROFILE = {
   name: "Japheth Oluwatimileyin Jerry",
-  title: "Software Engineer",
+  title: "Frontend Engineer | React & React Native",
   location: "Federal Capital Territory, Nigeria · Remote",
   email: "princejaphethjj@gmail.com",
   portfolio: "https://yafetport.netlify.app",
   linkedin: "https://www.linkedin.com/in/japheth-jerry-34a513274/",
   instagram: "https://www.instagram.com/_prince_yafet_/",
-  summary: `Software Engineer with 3+ years architecting enterprise applications in JavaScript/TypeScript and PHP (Laravel) ecosystems. Led development of applications serving 10,000+ users, achieving 98% code coverage and 95+ Lighthouse scores while reducing system latency by 40%, and established CI/CD pipelines with comprehensive testing across 15+ production deployments.`,
+  summary: `Frontend engineer building responsive web applications and cross-platform mobile interfaces with React, Next.js, React Native, and TypeScript. Combines UI/UX design experience with API integration, reusable components, and state management. Selected work spans analytics dashboards, developer tooling, and polished client websites.`,
 };
 
 // Key Projects with focus on technical leadership and business impact
 const KEY_PROJECTS = [
   {
-    title: "Bondyt Merchant & User Apps",
-    role: "Lead Mobile Developer (Merchant App)",
-    tech: "React Native, TypeScript, Redux/Zustand, Axios, Jest",
-    outcome: "Architected merchant app with TypeScript and Redux; implemented efficient state management reducing user wait time by 60%. Optimized API integration and caching strategies improving app performance by 40%.",
-    links: [
+    "title": "PicaTip",
+    "role": "Frontend Development",
+    "tech": "Next.js, React, TypeScript, Redux Toolkit, Tailwind CSS, Framer Motion",
+    "outcome": "Built responsive analytics dashboards, prediction workflows, and live-match interfaces. Implemented typed Redux state management, authentication and subscription screens, and reusable UI components.",
+    "links": [
       {
-        text: "Google Play",
-        url: "https://play.google.com/store/apps/details?id=com.bondyt.merchant"
-      },
-      {
-        text: "App Store",
-        url: "https://apps.apple.com/ng/app/bondyt-merchant-list-earn/id6741894381"
+        "text": "Live site",
+        "url": "https://picatip.com"
       }
     ]
   },
   {
-    title: "LCDP School Management System",
-    role: "Lead Full-Stack Developer",
-    tech: "PHP/Laravel, MySQL, Redis, Bootstrap, SASS, Jest",
-    outcome: "Architected scalable school management system serving 5,000+ users; implemented Redis caching and query optimization reducing server load by 70%. Developed automated grading system with comprehensive testing, cutting admin workload by 85% while maintaining 98% code coverage.",
-    links: [
+    "title": "Periderm CLI & Dashboard",
+    "role": "Full-Stack Development",
+    "tech": "React, TypeScript, Vite, TanStack Router, Node.js, Supabase",
+    "outcome": "Built a pre-launch scanning tool and companion web dashboard for reviewing scan histories and application issues. Connected developer tooling to a React interface for tracking project health and actionable findings.",
+    "links": [
       {
-        text: "View Project",
-        url: "https://gudu.lcpd.net/"
+        "text": "Live site",
+        "url": "https://periderm-cli.vercel.app/"
       }
     ]
   }
@@ -48,74 +42,42 @@ const KEY_PROJECTS = [
 
 // Strategic tech stack organization for ATS optimization
 const TECH_STACK = {
-  "Core Engineering": [
-    "TypeScript/JavaScript",
-    "MERN Stack (MongoDB, Express, React, Node.js)",
-    "System Design & Architecture",
-    "PHP/Laravel",
-    "Java",
-    "C++/C#"
-  ],
-  "Frontend & Mobile": [
-    "React/Next.js",
-    "React Native",
-    "Angular",
-    "Vue.js",
-    "Redux/Zustand",
-    "HTML5/CSS3",
-    "Bootstrap/Tailwind CSS",
-    "UI/UX Implementation"
-  ],
-  "Backend & Data": [
-    "REST/GraphQL APIs",
-    "Microservices Architecture",
-    "MySQL/PostgreSQL",
-    "MongoDB/Redis",
-    "WebSockets",
-    "XAMPP/LAMP Stack"
-  ],
-  "DevOps & Quality": [
-    "AWS/Cloud Services",
-    "Docker/Kubernetes",
-    "CI/CD Pipelines",
-    "Git/GitHub",
-    "Jest/Cypress",
-    "Figma/Adobe XD"
-  ]
+  "Frontend": ["React", "Next.js", "TypeScript / JavaScript", "HTML5 / CSS3", "Tailwind CSS", "Responsive UI"],
+  "State & Integration": ["Redux Toolkit", "REST APIs", "WebSockets", "TanStack Router"],
+  "Mobile & Design": ["React Native", "Figma", "UI/UX Design", "Reusable Components"],
+  "Backend & Delivery": ["Node.js", "PHP / Laravel", "MongoDB / MySQL", "Supabase", "Git / GitHub", "CI/CD", "Code Review"]
 };
 
 // Experience reordered by impact and recency
 const EXPERIENCE = [
   {
-    title: "Web Developer & UI/UX Designer",
-    company: "Web Launch Guys",
-    time: "2020 – Present",
-    employment: "Part-Time",
-    results: [
-      "Led full-stack development of 15+ enterprise applications using React/Next.js and Laravel; implemented performance optimizations reducing load times by 40% and improving Lighthouse scores to 90+",
-      "Architected scalable component libraries and design systems; reduced development time by 30% while maintaining 98% code coverage through comprehensive testing",
+    "title": "Frontend Engineer",
+    "company": "Spicodex",
+    "time": "2024 – Present",
+    "employment": "Full-Time",
+    "results": [
+      "Built React Native interfaces for Bondyt merchant and consumer applications, integrating APIs, authentication, and mobile state management.",
+      "Developed React web applications and contributed to testing and code reviews. Bondyt is past client work; the apps are no longer publicly live."
     ]
   },
   {
-    title: "Frontend Engineer",
-    company: "Spicodex",
-    time: "2024 – Present",
-    employment: "Full-Time",
-    results: [
-      "Led React Native mobile app development with TypeScript; implemented Redux/Zustand state management reducing user wait time by 60%",
-      "Established comprehensive testing strategy with Jest and Cypress; achieved 98% code coverage and reduced production bugs by 75%",
-      "Optimized API integration and caching strategies; improved app performance by 40%, maintaining 95+ Lighthouse scores"
+    "title": "Web Developer & UI/UX Designer",
+    "company": "Web Launch Guys",
+    "time": "2020 – Present",
+    "employment": "Part-Time",
+    "results": [
+      "Developed responsive React and Next.js websites, translating UI/UX designs and prototypes into reusable interface components.",
+      "Integrated REST and GraphQL services and worked on website performance, SEO, and cross-device layouts."
     ]
   },
   {
-    title: "Full-Stack Engineer",
-    company: "Aquila Cyber",
-    time: "2024 – Present",
-    employment: "Part-Time",
-    results: [
-      "Architected enterprise applications using MERN stack; implemented microservices architecture reducing deployment time by 85%",
-      "Engineered high-performance interfaces with React and TypeScript; optimized database queries reducing load times by 60%",
-      "Implemented of security best practices and automated testing; established CI/CD pipelines achieving 98% code coverage"
+    "title": "Full-Stack Engineer",
+    "company": "Aquila Cyber",
+    "time": "2024 – Present",
+    "employment": "Part-Time",
+    "results": [
+      "Built React interfaces and REST APIs using Node.js and PHP, working with MongoDB and MySQL data layers.",
+      "Contributed to application security and CI/CD workflows across full-stack projects."
     ]
   }
 ];
@@ -124,7 +86,7 @@ const EDUCATION = [
   {
     school: "Lincoln University College, Nigeria",
     degree: "Diploma in Computer Software Engineering",
-    year: "2022 – Present",
+    year: "2022 – 2025",
     focus: "Software Architecture & Cloud Computing"
   }
 ];
@@ -155,18 +117,19 @@ const FOOTER_LINKS = [
   },
   {
     icon: Globe,
-    text: "yafetport.netlify.app",
+    text: "Portfolio",
     href: "https://yafetport.netlify.app"
   },
   {
-    icon: Instagram,
-    text: "_prince_yafet_",
-    href: "https://www.instagram.com/_prince_yafet_/"
+    icon: Globe,
+    text: "GitHub",
+    href: "https://github.com/Prince-Japheth"
   }
 ];
 
 // Optimize print styles for exact A4 fit
 const PRINT_STYLES = `
+  .a4 .text-accentpurple { color: #6d28d9; }
   @page {
     size: A4;
     margin: 0;
@@ -249,10 +212,10 @@ const Index = () => {
                 Portfolio
               </a>
               <span className="text-gray-400">•</span>
-              <a href={PROFILE.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-accentpurple inline-flex items-center gap-0.5 underline decoration-1 underline-offset-2">
-                <Instagram className="w-3 h-3" aria-hidden="true" />
+              <a href={PROFILE.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-accentpurple inline-flex items-center gap-0.5 underline decoration-1 underline-offset-2">
+                <Linkedin className="w-3 h-3" aria-hidden="true" />
                 <LinkIcon className="w-2.5 h-2.5 text-gray-400" aria-hidden="true" />
-                Instagram
+                LinkedIn
               </a>
             </div>
           </div>
@@ -263,13 +226,7 @@ const Index = () => {
             className="relative w-16 h-16 group"
             aria-label="Portfolio QR Code"
           >
-            <img
-              src="/frame.svg"
-              alt=""
-              className="absolute inset-0 w-full h-full group-hover:opacity-80 transition-opacity"
-              aria-hidden="true"
-            />
-            <CVQRCode url={PROFILE.portfolio} />
+            <img src="/portfolio-qr.svg" alt="Scan to open my portfolio" className="w-14 h-14" />
             <ExternalLink className="absolute -bottom-1 -right-1 w-3 h-3 text-accentpurple opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true" />
           </a>
         </header>
