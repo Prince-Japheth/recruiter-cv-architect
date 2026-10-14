@@ -15,7 +15,7 @@ const PROFILE = {
 // Key Projects with focus on technical leadership and business impact
 const KEY_PROJECTS = [
   {
-    "title": "PicaTip",
+    "title": "PicaTip — a Popkup product",
     "role": "Frontend Development",
     "tech": "Next.js, React, TypeScript, Redux Toolkit, Tailwind CSS, Framer Motion",
     "outcome": "Built responsive analytics dashboards, prediction workflows, and live-match interfaces. Implemented typed Redux state management, authentication and subscription screens, and reusable UI components.",
@@ -51,13 +51,23 @@ const TECH_STACK = {
 // Experience reordered by impact and recency
 const EXPERIENCE = [
   {
-    "title": "Frontend Engineer",
-    "company": "Spicodex",
-    "time": "2024 – Present",
-    "employment": "Full-Time",
+    "title": "Frontend Developer",
+    "company": "Witty",
+    "time": "Jul – Oct 2026",
+    "employment": "Contract",
     "results": [
-      "Built React Native interfaces for Bondyt merchant and consumer applications, integrating APIs, authentication, and mobile state management.",
-      "Developed React web applications and contributed to testing and code reviews. Bondyt is past client work; the apps are no longer publicly live."
+      "Built Witty’s public-facing platform for its trade and cross-border payments business.",
+      "Contributed frontend updates to existing trade and partner platforms at trade.wittytech.io and partners.wittytech.io."
+    ]
+  },
+  {
+    "title": "Lead Frontend Developer",
+    "company": "Popkup",
+    "time": "2025 – 2026",
+    "employment": "Contract",
+    "results": [
+      "Led frontend development for Popkup’s commerce platform and PicaTip, a Popkup product, using Next.js and TypeScript.",
+      "Built storefront, checkout, and admin interfaces; integrated payment and shipping APIs for the commerce platform."
     ]
   },
   {
