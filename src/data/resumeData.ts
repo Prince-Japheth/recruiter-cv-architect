@@ -155,6 +155,30 @@ export const toolsAndProductivity = [
 ];
 
 export const experienceData = [
+{
+  "period": "July - October 2026",
+  "title": "Frontend Developer",
+  "employmentType": "CONTRACT",
+  "companyUrl": "https://wittytech.io/",
+  "companyIcon": "/company-witty.svg",
+  "companyName": "Witty",
+  "responsibilities": [
+    "Built Witty’s public-facing platform for its trade and cross-border payments business.",
+    "Contributed frontend updates to existing trade and partner platforms at trade.wittytech.io and partners.wittytech.io."
+  ]
+},
+{
+  "period": "2025 - 2026",
+  "title": "Lead Frontend Developer",
+  "employmentType": "CONTRACT",
+  "companyUrl": "https://picatip.com",
+  "companyIcon": "/company-popkup.svg",
+  "companyName": "Popkup",
+  "responsibilities": [
+    "Led frontend development of Popkup’s commerce platform and PicaTip, a Popkup product, using Next.js and TypeScript.",
+    "Built storefront, checkout, and administrative interfaces and integrated payment and shipping APIs."
+  ]
+},
   {
     period: "2020 - Present",
     title: "Web Developer, UI/UX & Graphic Designer",
@@ -171,7 +195,7 @@ export const experienceData = [
     ]
   },  
   {
-    period: "2024 - Present",
+    period: "2024 - 2025",
     title: "Software Engineer",
     employmentType: "FULL-TIME",
     companyUrl: "https://spicodex.com/",
