@@ -42,9 +42,9 @@ const KEY_PROJECTS = [
 
 // Strategic tech stack organization for ATS optimization
 const TECH_STACK = {
-  "Frontend": ["React", "Next.js", "TypeScript / JavaScript", "HTML5 / CSS3", "Tailwind CSS", "Responsive UI"],
+  "Frontend": ["React", "Next.js", "Angular / Svelte", "TypeScript / JavaScript", "HTML5 / CSS3", "Tailwind CSS", "Responsive UI"],
   "State & Integration": ["Redux Toolkit", "Zustand", "REST APIs", "WebSockets", "TanStack Router"],
-  "Mobile & Design": ["React Native", "Flutter", "Figma", "UI/UX Design", "Reusable Components"],
+  "Mobile & Design": ["React Native", "Flutter / Swift", "Figma", "UI/UX Design", "Reusable Components"],
   "Backend & Delivery": ["Node.js", "PHP / Laravel", "MongoDB / MySQL", "Supabase", "Git / GitHub", "CI/CD", "Code Review"]
 };
 
@@ -96,8 +96,8 @@ const EDUCATION = [
   {
     school: "Lincoln University College",
     degree: "BSc in Cybersecurity and Networking",
-    year: "2025 – Present",
-    focus: "Currently studying"
+    year: "2025 – 2027 (Expected)",
+    focus: ""
   },
   {
     school: "Lincoln University College, Nigeria",
@@ -150,6 +150,7 @@ const FOOTER_LINKS = [
 
 // Optimize print styles for exact A4 fit
 const PRINT_STYLES = `
+  .a4 h2 { margin-top: 12px; margin-bottom: 6px; }
   .a4 .text-accentpurple { color: #6d28d9; }
   @page {
     size: A4;
@@ -312,19 +313,9 @@ const Index = () => {
           className="mb-1.5"
         >
           <SectionHeader>Technical Skills</SectionHeader>
-          <div className="grid grid-cols-4 gap-x-3 gap-y-0.5">
+          <div className="space-y-1 text-[9pt] text-gray-700">
             {Object.entries(TECH_STACK).map(([category, skills]) => (
-              <div key={category}>
-                <h3 className="font-semibold text-gray-800 text-[9pt] mb-0.25">{category}</h3>
-                <ul
-                  className="text-[8pt] text-gray-700"
-                  role="list"
-                >
-                  {skills.map((skill) => (
-                    <li key={skill} role="listitem">{skill}</li>
-                  ))}
-                </ul>
-              </div>
+              <p key={category}><strong>{category}:</strong> {skills.join(", ")}</p>
             ))}
           </div>
         </section>
@@ -378,7 +369,7 @@ const Index = () => {
           role="region"
           className="mb-1"
         >
-          <div className="grid grid-cols-2 gap-x-3">
+          <div className="flex flex-col gap-2">
             <div>
               <SectionHeader>Education</SectionHeader>
               {EDUCATION.map((ed) => (
