@@ -43,8 +43,8 @@ const KEY_PROJECTS = [
 // Strategic tech stack organization for ATS optimization
 const TECH_STACK = {
   "Frontend": ["React", "Next.js", "TypeScript / JavaScript", "HTML5 / CSS3", "Tailwind CSS", "Responsive UI"],
-  "State & Integration": ["Redux Toolkit", "REST APIs", "WebSockets", "TanStack Router"],
-  "Mobile & Design": ["React Native", "Figma", "UI/UX Design", "Reusable Components"],
+  "State & Integration": ["Redux Toolkit", "Zustand", "REST APIs", "WebSockets", "TanStack Router"],
+  "Mobile & Design": ["React Native", "Flutter", "Figma", "UI/UX Design", "Reusable Components"],
   "Backend & Delivery": ["Node.js", "PHP / Laravel", "MongoDB / MySQL", "Supabase", "Git / GitHub", "CI/CD", "Code Review"]
 };
 
@@ -108,6 +108,11 @@ const EDUCATION = [
 ];
 
 const CERTIFICATIONS = [
+  {
+    cert: "Associate Degree in Computer Software Engineering",
+    year: "2025",
+    status: "Lincoln University College"
+  },
   {
     cert: "Professional Scrum Master I (PSM I)",
     year: "2023",
