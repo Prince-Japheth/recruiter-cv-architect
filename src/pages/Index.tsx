@@ -150,7 +150,6 @@ const FOOTER_LINKS = [
 
 // Optimize print styles for exact A4 fit
 const PRINT_STYLES = `
-  .a4 h2 { margin-top: 12px; margin-bottom: 6px; }
   .a4 .text-accentpurple { color: #6d28d9; }
   @page {
     size: A4;
@@ -313,9 +312,19 @@ const Index = () => {
           className="mb-1.5"
         >
           <SectionHeader>Technical Skills</SectionHeader>
-          <div className="space-y-1 text-[9pt] text-gray-700">
+          <div className="grid grid-cols-4 gap-x-3 gap-y-0.5">
             {Object.entries(TECH_STACK).map(([category, skills]) => (
-              <p key={category}><strong>{category}:</strong> {skills.join(", ")}</p>
+              <div key={category}>
+                <h3 className="font-semibold text-gray-800 text-[9pt] mb-0.25">{category}</h3>
+                <ul
+                  className="text-[8pt] text-gray-700"
+                  role="list"
+                >
+                  {skills.map((skill) => (
+                    <li key={skill} role="listitem">{skill}</li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </div>
         </section>
@@ -369,7 +378,7 @@ const Index = () => {
           role="region"
           className="mb-1"
         >
-          <div className="flex flex-col gap-2">
+          <div className="grid grid-cols-2 gap-x-3">
             <div>
               <SectionHeader>Education</SectionHeader>
               {EDUCATION.map((ed) => (
