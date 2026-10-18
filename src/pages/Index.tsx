@@ -51,16 +51,6 @@ const TECH_STACK = {
 // Experience reordered by impact and recency
 const EXPERIENCE = [
   {
-    "title": "Frontend Developer",
-    "company": "Witty",
-    "time": "Jul – Oct 2026",
-    "employment": "Contract",
-    "results": [
-      "Built Witty’s public-facing platform for its trade and cross-border payments business.",
-      "Contributed frontend updates to existing trade and partner platforms at trade.wittytech.io and partners.wittytech.io."
-    ]
-  },
-  {
     "title": "Lead Frontend Developer",
     "company": "Popkup",
     "time": "2025 – 2026",
@@ -68,6 +58,16 @@ const EXPERIENCE = [
     "results": [
       "Led frontend development for Popkup’s commerce platform and PicaTip, a Popkup product, using Next.js and TypeScript.",
       "Built storefront, checkout, and admin interfaces; integrated payment and shipping APIs for the commerce platform."
+    ]
+  },
+  {
+    "title": "Frontend Developer",
+    "company": "Witty",
+    "time": "Jul – Oct 2026",
+    "employment": "Contract",
+    "results": [
+      "Built Witty’s public-facing platform for its trade and cross-border payments business.",
+      "Contributed frontend updates to existing trade and partner platforms at trade.wittytech.io and partners.wittytech.io."
     ]
   },
   {
