@@ -94,6 +94,12 @@ const EXPERIENCE = [
 
 const EDUCATION = [
   {
+    school: "Lincoln University College",
+    degree: "BSc in Cybersecurity and Networking",
+    year: "2025 – Present",
+    focus: "Currently studying"
+  },
+  {
     school: "Lincoln University College, Nigeria",
     degree: "Diploma in Computer Software Engineering",
     year: "2022 – 2025",
