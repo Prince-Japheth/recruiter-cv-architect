@@ -1,11 +1,12 @@
 import SectionHeader from "@/components/SectionHeader";
-import { Mail, Linkedin, Globe, ExternalLink, Link as LinkIcon } from "lucide-react";
+import { Mail, Phone, Linkedin, Globe, ExternalLink, Link as LinkIcon } from "lucide-react";
 
 const PROFILE = {
   name: "Japheth Oluwatimileyin Jerry",
   title: "Frontend Engineer | React & React Native",
   location: "Federal Capital Territory, Nigeria · Remote",
   email: "princejaphethjj@gmail.com",
+  phone: "+234 803 476 6310",
   portfolio: "https://yafetport.netlify.app",
   linkedin: "https://www.linkedin.com/in/japheth-jerry-34a513274/",
   instagram: "https://www.instagram.com/_prince_yafet_/",
@@ -225,6 +226,12 @@ const Index = () => {
                 <Mail className="w-3 h-3" aria-hidden="true" />
                 <LinkIcon className="w-2.5 h-2.5 text-gray-400" aria-hidden="true" />
                 {PROFILE.email}
+              </a>
+              <span className="text-gray-400">•</span>
+              <a href={`tel:${PROFILE.phone.replace(/\s/g, "")}`} className="hover:text-accentpurple inline-flex items-center gap-0.5 underline decoration-1 underline-offset-2">
+                <Phone className="w-3 h-3" aria-hidden="true" />
+                <LinkIcon className="w-2.5 h-2.5 text-gray-400" aria-hidden="true" />
+                {PROFILE.phone}
               </a>
               <span className="text-gray-400">•</span>
               <a href={PROFILE.portfolio} target="_blank" rel="noopener noreferrer" className="hover:text-accentpurple inline-flex items-center gap-0.5 underline decoration-1 underline-offset-2">
